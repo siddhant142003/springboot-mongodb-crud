@@ -1,0 +1,14 @@
+services:
+  app:
+    build: .
+    container_name: springboot-crud
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mongo
+
+  mongo:
+    image: mongo:7
+    container_name: mongo
+    ports:
+      - "27017:27017"
