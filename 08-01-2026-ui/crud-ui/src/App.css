@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+h1 {
+  margin-bottom: 40px;
+}
+
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 200px);
+  gap: 25px;
+}
+
+button {
+  padding: 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  color: white;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+  transform: scale(1.08);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.create {
+  background-color: #2ecc71;
+}
+
+.read {
+  background-color: #3498db;
+}
+
+.update {
+  background-color: #f1c40f;
+  color: black;
+}
+
+.delete {
+  background-color: #e74c3c;
+}
