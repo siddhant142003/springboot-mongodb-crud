@@ -13,7 +13,7 @@ import org.springframework.test.web.servlet.MockMvc;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
-@WebMvcTest(StudentController.class)
+@WebMvcTest(com.example.crud.controller.StudentController.class)
 class StudentControllerTest {
 
     @Autowired
@@ -22,8 +22,7 @@ class StudentControllerTest {
     @MockBean
     private StudentService studentService;
 
-    @Autowired
-    private ObjectMapper objectMapper;
+    private final ObjectMapper objectMapper = new ObjectMapper(); // ✅ manual
 
     @Test
     void testCreateStudent() throws Exception {

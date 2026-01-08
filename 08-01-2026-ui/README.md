@@ -1,19 +1,44 @@
-# UI Development – React CRUD Interface
-Date: 08-01-2026
+# Student Management System – Frontend (React)
 
-## Overview
-This task focuses on building a creative frontend UI for the Spring Boot CRUD application using React. The UI provides four main actions corresponding to CRUD operations.
+This folder contains the **React-based frontend UI** for the Student Management System.  
+It is integrated with a **Spring Boot + MongoDB backend** running inside Docker.
+
+---
 
 ## Features
-- React-based UI
-- Four buttons: Create, Read, Update, Delete
-- Communicates with Spring Boot REST APIs
-- Clean and modular component structure
+- Create Student
+- View All Students
+- Update Student
+- Delete Student
+- Fully connected to backend REST APIs
+
+---
 
 ## Tech Stack
-- React
+- React.js
 - JavaScript
-- HTML & CSS
+- Fetch API
+- CSS
+- Spring Boot (Backend)
+- MongoDB
+- Docker
 
-## Status
-UI setup completed and ready for backend integration.
+---
+
+## Backend API Integration
+
+Base URL: http://localhost:8080/api/students
+
+### Endpoints Used
+POST /api/students
+GET /api/students
+PUT /api/students/{id}
+DELETE /api/students/{id}
+
+---
+
+## How to Run the UI
+```bash
+cd crud-ui
+npm install
+npm start
